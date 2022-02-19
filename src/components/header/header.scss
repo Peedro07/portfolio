@@ -1,0 +1,111 @@
+@import "src/assets/scss/color";
+
+header {
+  width: 50%;
+  margin: 5em auto 0 auto;
+
+  button {
+    background: #d4d4d4;
+    padding: 0.7em;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 85px;
+    justify-content: center;
+    min-width: 106px;
+
+    svg {
+      font-size: 20px;
+    }
+  }
+
+  nav {
+    height: 100%;
+    margin-top: 5em;
+
+    ul {
+      margin-top: 10px;
+      height: 30%;
+      display: flex;
+      flex-direction: column;
+
+      li:nth-child(1) > button {
+        border-radius: 10px 10px 0 0;
+      }
+
+      li:nth-child(4) > button {
+        border: none;
+        border-radius: 0 0 10px 10px;
+      }
+
+
+    }
+  }
+
+  .btn-theme {
+    position: relative;
+
+    ol {
+      width: 300px;
+      position: absolute;
+      z-index: 100;
+      top: -10px;
+      display: flex;
+      padding: 0;
+      margin: 0;
+
+      .menu {
+        display: none;
+
+        div {
+          margin-left: 5px;
+        }
+
+        li {
+          margin-left: 5px;
+        }
+      }
+
+
+      li > button {
+        border-radius: 10px;
+        background: black;
+        color: white;
+        border: 4px solid white;
+
+        li {
+          border-right: 1px solid;
+        }
+      }
+    }
+  }
+
+
+  //spacing
+  // Button hover
+  .spacing > ul > li:nth-child(1) > button:hover > svg {
+    transition: 0.5s;
+    color: $spacing-color-green;
+  }
+
+  .spacing > ul > li:nth-child(2) > button:hover > svg {
+    transition: 0.5s;
+    color: $spacing-color-purple;
+  }
+
+  .spacing > ul > li:nth-child(3) > button:hover > svg {
+    transition: 0.5s;
+    color: $spacing-color-orange;
+  }
+
+  .spacing > ul > li:nth-child(4) > button:hover > svg {
+    transition: 0.5s;
+    color: $spacing-color-blue;
+  }
+
+}
+
+
