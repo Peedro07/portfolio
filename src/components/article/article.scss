@@ -4,11 +4,11 @@
 .article {
   margin: 5em 0 5em 0;
   min-width: 60%;
-  background: $spacing-color-marin;
   color: white;
   padding: 0 2%;
   max-height: 400px;
   overflow: auto;
+  border-radius: 0 10px 10px 0;
 
   .title {
     h2 {
@@ -87,18 +87,6 @@
 
   }
 
-  .spacing {
-    h2 {
-      color: black;
-    }
-
-    .back, .front {
-      margin-bottom: 1em;
-      background-color: $white;
-    }
-
-  }
-
   .contact {
     margin: 2em auto 0 auto;
 
@@ -124,4 +112,25 @@
     }
   }
 
+  .mission{
+    svg{
+      color: $spacing-color-orange;
+      font-size: 15px;
+      margin-right: 5px;
+    }
+  }
+
+
+  // Spacing
+    .spacing {
+    h2 {
+      color: black;
+    }
+
+    .back, .front {
+      margin-bottom: 1em;
+      background-color: $white;
+    }
+
+  }
 }

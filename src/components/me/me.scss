@@ -1,52 +1,69 @@
 @import "src/assets/scss/color";
 
 .profile {
-  background-color: #d4d4d4;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: -9px -4px 3px 8px $spacing-color-purple-white;
   min-width: 40%;
   height: 600px;
+  color: white;
+  justify-content: space-between;
+  border-radius: 10px;
 
   .picture-me {
     width: auto;
     max-height: 250px;
+    margin-top: 1em;
 
     img {
       width: auto;
       height: 100%;
+      border-radius: 50%;
     }
   }
 
   .content-me {
     display: flex;
+    height: 20%;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
 
     h1, h2 {
       margin: 0;
     }
+  }
 
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1em;
     ul {
       display: flex;
       width: 60%;
       justify-content: space-around;
-    }
 
-    ul > li {
-      font-size: 20px;
+      li {
+        font-size: 30px;
 
-      a {
-        text-decoration: none;
-        color: $spacing-color-marin;
-      }
-      a:hover svg {
-        transition: 0.5s;
-        transform: scale(1.5);
+        a {
+          text-decoration: none;
+          color: white;
+        }
+
+        a:hover svg {
+          transition: 0.5s;
+          transform: scale(1.5);
+        }
       }
     }
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  .profile {
+    height: 400px;
   }
 }

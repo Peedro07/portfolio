@@ -6,11 +6,24 @@ import {GiSpaceSuit} from 'react-icons/gi';
 import {BiWorld} from 'react-icons/bi';
 import {MdOutlineSportsSoccer} from 'react-icons/md';
 import './header.scss'
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 
 const Header = (props) => {
     const [active, setActive] = useState(false)
+    const [icons, setIcons] = useState({})
+    useEffect(() => {
+        switch (props.theme) {
+            case 'spacing-theme':
+                setIcons({
+                    'pierre': <RiAliensFill/>,
+                    'stack': <FaSpaceShuttle/>,
+                    'mission': <GiSpaceSuit/>,
+                    'contact': <BiWorld/>
+                })
+        }
+    }, [props.theme])
+
     return (
         <>
             <header>
@@ -40,25 +53,25 @@ const Header = (props) => {
                     <ul>
                         <li>
                             <button onClick={() => props.setRouter('about')}>
-                                <RiAliensFill/>
+                                {icons.pierre}
                                 <p>Pierre</p>
                             </button>
                         </li>
                         <li>
                             <button onClick={() => props.setRouter('stack')}>
-                                <FaSpaceShuttle/>
+                                {icons.stack}
                                 <p>Stack</p>
                             </button>
                         </li>
                         <li>
                             <button onClick={() => props.setRouter('mission')}>
-                                <GiSpaceSuit/>
+                                {icons.mission}
                                 <p>Missions</p>
                             </button>
                         </li>
                         <li>
                             <button onClick={() => props.setRouter('contact')}>
-                                <BiWorld/>
+                                {icons.contact}
                                 <p>Contact</p>
                             </button>
                         </li>

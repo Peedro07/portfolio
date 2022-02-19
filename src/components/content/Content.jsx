@@ -6,8 +6,8 @@ const Content = (props) => {
     return (
         <>
             <div className="content">
-                <Me/>
-                <Article router={props.router}/>
+                <Me theme={props.theme}/>
+                <Article router={props.router} theme={props.theme}/>
             </div>
         </>
     )

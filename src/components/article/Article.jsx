@@ -1,5 +1,4 @@
 import "./article.scss"
-import {FaReact} from 'react-icons/fa'
 import {useEffect, useState} from "react";
 import react from '../../assets/img/stacks/react-js.png'
 import node from '../../assets/img/stacks/node-js.png'
@@ -14,9 +13,11 @@ import vue from '../../assets/img/stacks/vuejs.png'
 import wp from '../../assets/img/stacks/wp.png'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {FiMail} from 'react-icons/fi'
+import {GiSpaceSuit} from "react-icons/gi";
 
 const Article = (props) => {
     const [view, setView] = useState(<About/>)
+    const [bgArticle, setBgArticle] = useState()
 
     let displayView = () => {
         switch (props.router) {
@@ -39,9 +40,18 @@ const Article = (props) => {
         displayView();
     }, [props])
 
+    useEffect(() => {
+        switch (props.theme){
+            case 'spacing-theme':
+                setBgArticle('spacing-article')
+        }
+    }, [props.theme])
+
+    console.log()
+
     return (
         <>
-            <div className="article">
+            <div className={"article " + bgArticle}>
 
                 {view}
 
@@ -89,7 +99,7 @@ const Stack = () => {
                 <span className="separator"/>
             </div>
             <p>Au cours de mes divers années de développement, j'ai pu apréhender plusiers stacks. Vous pouvez les
-                découvrir ci dessous </p>
+                découvrir ci dessous.</p>
             <div className="stack spacing">
                 <div className="back">
                     <div className="title">
@@ -130,6 +140,19 @@ const Mission = () => {
             <div className="title">
                 <h2>Missions</h2>
                 <span className="separator"/>
+            </div>
+            <p>
+                Etant autodidacte et passioné par le web, j'ai pu réaliser et travailler sur diverse mission.
+            </p>
+            <div className="mission">
+                <ul>
+                    <li><GiSpaceSuit/>Création de site en <strong>PHP POO</strong></li>
+                    <li><GiSpaceSuit/>Création d'API avec <strong>nodeJs</strong> en utilisant <strong>Strapi ou Express</strong></li>
+                    <li><GiSpaceSuit/>Création & refonte <strong>d'API avec Symfony</strong></li>
+                    <li><GiSpaceSuit/>Création de template <strong>HTML CSS</strong></li>
+                    <li><GiSpaceSuit/>Création de site <strong>Wordpress avec DIVI et Elementor</strong></li>
+                    <li><GiSpaceSuit/>Mise en place et refonte du <strong>SEO</strong> sur plusieurs sites</li>
+                </ul>
             </div>
         </>
     )
