@@ -44,12 +44,12 @@ const Header = (props) => {
                                             Space
                                         </button>
                                     </li>
-                                    <li>
+                                    {/*<li>
                                         <button>
                                             <MdOutlineSportsSoccer/>
                                             Sport
                                         </button>
-                                    </li>
+                                    </li>*/}
                                 </ul>
                             </div>
                         </li>
