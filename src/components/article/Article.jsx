@@ -18,6 +18,7 @@ import {GiSpaceSuit} from "react-icons/gi";
 const Article = (props) => {
     const [view, setView] = useState(<About/>)
 
+
     let displayView = () => {
         switch (props.router) {
             case 'about' :
@@ -54,6 +55,12 @@ const Article = (props) => {
 export default Article
 
 const About = () => {
+    const birth = () => {
+        let old = new Date('1994 03 10')
+        let diff = Date.now() - old.getTime();
+        let age = new Date(diff);
+        return Math.abs(age.getUTCFullYear() - 1970);
+    }
     return (
         <>
             <div className="title">
@@ -69,7 +76,7 @@ const About = () => {
                 </div>
                 <div className="description-about">
                     <div className="card">
-                        <span className="cat">27 ans</span>
+                        <span className="cat">{birth()} ans</span>
                         <span className="cat">France</span>
                         <span className="cat">Angers</span>
                     </div>
@@ -137,7 +144,8 @@ const Mission = () => {
             <div className="mission">
                 <ul>
                     <li><GiSpaceSuit/>Création de site en <strong>PHP POO</strong></li>
-                    <li><GiSpaceSuit/>Création d'API avec <strong>nodeJs</strong> en utilisant <strong>Strapi ou Express</strong></li>
+                    <li><GiSpaceSuit/>Création d'API avec <strong>nodeJs</strong> en utilisant <strong>Strapi ou
+                        Express</strong></li>
                     <li><GiSpaceSuit/>Création & refonte <strong>d'API avec Symfony</strong></li>
                     <li><GiSpaceSuit/>Création de template <strong>HTML CSS</strong></li>
                     <li><GiSpaceSuit/>Création de site <strong>Wordpress avec DIVI et Elementor</strong></li>
