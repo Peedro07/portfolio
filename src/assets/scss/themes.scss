@@ -34,6 +34,7 @@
     li:nth-child(1) > button:hover > svg {
       transition: 0.5s;
       color: $spacing-color-green;
+      -webkit-text-fill-color: $spacing-color-green;
     }
 
     li:nth-child(2) > button:hover > svg {
@@ -73,6 +74,7 @@
       li:nth-child(1) > button:hover > svg {
         transition: 0.5s;
         color: $classic-bg;
+        -webkit-text-fill-color: $classic-bg;
       }
 
       li:nth-child(2) > button:hover > svg {

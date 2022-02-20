@@ -77,7 +77,9 @@ const Header = (props) => {
                         </li>
                         <div className="menu-right">
                             <li>
-                                <button onClick={() => props.setRouter('about')}>
+                                <button onClick={() => {
+                                    props.setRouter('about')
+                                }}>
                                     {icons.pierre}
                                     <p>Pierre</p>
                                 </button>
