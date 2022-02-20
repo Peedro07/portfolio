@@ -112,32 +112,18 @@
     }
   }
 
-  .mission{
-    svg{
+  .mission {
+    svg {
       color: $spacing-color-orange;
       font-size: 15px;
       margin-right: 5px;
     }
   }
-
-
-  // Spacing
-    .spacing {
-    h2 {
-      color: black;
-    }
-
-    .back, .front {
-      margin-bottom: 1em;
-      background-color: $white;
-    }
-
-  }
 }
 
 // Tablette
 @media screen and (max-width: 991px) {
-  .article{
+  .article {
     margin: 1em 0;
     min-height: 500px;
   }

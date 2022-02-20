@@ -1,20 +1,13 @@
 import Img from '../../assets/img/pierre-waflart.png';
-import './me.scss'
+import './profile.scss'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {FiMail} from 'react-icons/fi'
 import {useEffect, useState} from "react";
 
-const Me = (props) => {
-    const [bgProfile, setBgProfile] = useState();
-    useEffect(() => {
-        switch (props.theme){
-            case 'spacing-theme':
-                setBgProfile('spacing-profile')
-        }
-    }, [props.theme])
+const Profile = () => {
     return (
         <>
-            <section className={"profile " + bgProfile}>
+            <section className="profile">
                 <div className="picture-me">
                     <img src={Img} alt=""/>
                 </div>
@@ -36,4 +29,4 @@ const Me = (props) => {
         </>
     )
 }
-export default Me
+export default Profile

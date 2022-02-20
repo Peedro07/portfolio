@@ -17,7 +17,6 @@ import {GiSpaceSuit} from "react-icons/gi";
 
 const Article = (props) => {
     const [view, setView] = useState(<About/>)
-    const [bgArticle, setBgArticle] = useState()
 
     let displayView = () => {
         switch (props.router) {
@@ -40,18 +39,9 @@ const Article = (props) => {
         displayView();
     }, [props])
 
-    useEffect(() => {
-        switch (props.theme){
-            case 'spacing-theme':
-                setBgArticle('spacing-article')
-        }
-    }, [props.theme])
-
-    console.log()
-
     return (
         <>
-            <div className={"article " + bgArticle}>
+            <div className={"article"}>
 
                 {view}
 
@@ -100,7 +90,7 @@ const Stack = () => {
             </div>
             <p>Au cours de mes divers années de développement, j'ai pu apréhender plusiers stacks. Vous pouvez les
                 découvrir ci dessous.</p>
-            <div className="stack spacing">
+            <div className="stack">
                 <div className="back">
                     <div className="title">
                         <h2>Back-end</h2>

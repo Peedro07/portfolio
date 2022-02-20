@@ -1,13 +1,13 @@
 import './content.scss'
-import Me from "../me/Me";
+import Profile from "../profile/Profile";
 import Article from "../article/Article";
 
 const Content = (props) => {
     return (
         <>
             <div className="content">
-                <Me theme={props.theme}/>
-                <Article router={props.router} theme={props.theme}/>
+                <Profile/>
+                <Article router={props.router}/>
             </div>
         </>
     )

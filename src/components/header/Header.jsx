@@ -1,10 +1,12 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faPalette} from '@fortawesome/free-solid-svg-icons'
 import {RiAliensFill} from 'react-icons/ri';
-import {FaSpaceShuttle} from 'react-icons/fa';
+import {FaSpaceShuttle, FaUserAlt} from 'react-icons/fa';
 import {GiSpaceSuit} from 'react-icons/gi';
 import {BiWorld} from 'react-icons/bi';
+import {FiTarget} from 'react-icons/fi';
 import {MdOutlineSportsSoccer} from 'react-icons/md';
+import {GrStackOverflow, GrContact} from 'react-icons/gr';
 import './header.scss'
 import {useEffect, useState} from "react";
 
@@ -21,14 +23,28 @@ const Header = (props) => {
                     'mission': <GiSpaceSuit/>,
                     'contact': <BiWorld/>
                 })
+                break;
+            case 'classic-theme':
+                setIcons({
+                    'pierre': <FaUserAlt/>,
+                    'stack': <GrStackOverflow/>,
+                    'mission': <FiTarget/>,
+                    'contact': <GrContact/>
+                })
+                break;
         }
     }, [props.theme])
+
+    const updateTheme = (data) =>{
+        setActive(false);
+        props.setTheme(data)
+    }
 
     return (
         <>
             <header>
 
-                <nav className="spacing">
+                <nav>
                     <ul className="list-item">
                         <li className="btn-theme">
                             <button onClick={() => setActive(!active)}>
@@ -39,7 +55,13 @@ const Header = (props) => {
                             <div className={active ? "menu active-flex" : "menu"}>
                                 <ul>
                                     <li>
-                                        <button>
+                                        <button onClick={() => updateTheme('classic-theme')}>
+                                            <FaUserAlt/>
+                                            Classic
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button onClick={() => updateTheme('spacing-theme')}>
                                             <FaSpaceShuttle/>
                                             Space
                                         </button>
