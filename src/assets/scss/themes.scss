@@ -31,6 +31,11 @@
   }
 
   .menu-right {
+
+    li > button {
+      color: black;
+    }
+
     li:nth-child(1) > button:hover > svg {
       transition: 0.5s;
       color: $spacing-color-green;
@@ -70,9 +75,8 @@
     }
 
     .menu-right {
-      li > button > svg{
-        color: red;
-        -webkit-text-fill-color: red;
+      li > button {
+        color: black;
       }
 
       li:nth-child(1) > button:hover > svg {
