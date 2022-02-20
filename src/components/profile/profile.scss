@@ -12,8 +12,8 @@
 
   .picture-me {
     width: auto;
-    max-height: 250px;
     margin-top: 1em;
+    height: 60%;
 
     img {
       width: auto;
@@ -39,6 +39,7 @@
     justify-content: center;
     width: 100%;
     margin-bottom: 1em;
+
     ul {
       display: flex;
       width: 60%;
