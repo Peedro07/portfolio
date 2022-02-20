@@ -29,5 +29,13 @@
   }
 }
 
+// Tablette
 @media screen and (max-width: 991px) {
+  .layout{
+    grid-template-columns: 100%;
+  }
+}
+
+// Iphone
+@media screen and (max-width: 400px) {
 }

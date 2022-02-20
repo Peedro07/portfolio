@@ -27,54 +27,59 @@ const Header = (props) => {
     return (
         <>
             <header>
-                <div className="btn-theme">
-                    <ol>
-                        <li>
-                            <button onClick={() => setActive(!active)}><FontAwesomeIcon icon={faPalette}/></button>
+
+                <nav className="spacing">
+                    <ul className="list-item">
+                        <li className="btn-theme">
+                            <button onClick={() => setActive(!active)}>
+                                <FontAwesomeIcon icon={faPalette}/>
+                            </button>
                         </li>
-                        <div className={active ? "menu active-flex" : "menu"}>
+                        <li>
+                            <div className={active ? "menu active-flex" : "menu"}>
+                                <ul>
+                                    <li>
+                                        <button>
+                                            <FaSpaceShuttle/>
+                                            Space
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            <MdOutlineSportsSoccer/>
+                                            Sport
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <div className="menu-right">
                             <li>
-                                <button>
-                                    <FaSpaceShuttle/>
-                                    Space
+                                <button onClick={() => props.setRouter('about')}>
+                                    {icons.pierre}
+                                    <p>Pierre</p>
                                 </button>
                             </li>
                             <li>
-                                <button>
-                                    <MdOutlineSportsSoccer/>
-                                    Sport
+                                <button onClick={() => props.setRouter('stack')}>
+                                    {icons.stack}
+                                    <p>Stack</p>
+                                </button>
+                            </li>
+                            <li>
+                                <button onClick={() => props.setRouter('mission')}>
+                                    {icons.mission}
+                                    <p>Missions</p>
+                                </button>
+                            </li>
+                            <li>
+                                <button onClick={() => props.setRouter('contact')}>
+                                    {icons.contact}
+                                    <p>Contact</p>
                                 </button>
                             </li>
                         </div>
 
-                    </ol>
-                </div>
-                <nav className="spacing">
-                    <ul>
-                        <li>
-                            <button onClick={() => props.setRouter('about')}>
-                                {icons.pierre}
-                                <p>Pierre</p>
-                            </button>
-                        </li>
-                        <li>
-                            <button onClick={() => props.setRouter('stack')}>
-                                {icons.stack}
-                                <p>Stack</p>
-                            </button>
-                        </li>
-                        <li>
-                            <button onClick={() => props.setRouter('mission')}>
-                                {icons.mission}
-                                <p>Missions</p>
-                            </button>
-                        </li>
-                        <li>
-                            <button onClick={() => props.setRouter('contact')}>
-                                {icons.contact}
-                                <p>Contact</p>
-                            </button>
-                        </li>
                     </ul>
                 </nav>
             </header>

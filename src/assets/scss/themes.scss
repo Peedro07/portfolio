@@ -6,35 +6,40 @@
   background-image: url(/src/assets/img/astronomy-g13efc3c72_1920.jpg);
   font-family: 'Space Mono', monospace !important;
 
-  button{
+  button {
     font-family: 'Space Mono', monospace !important;
   }
 
-  .spacing-profile{
+  .spacing-profile {
     background-color: #32367a;
     box-shadow: -12px -7px 14px 4px $spacing-color-white;
   }
+
   .spacing-article {
     background-color: $spacing-color-marin;
   }
+
+  .menu-right {
+    li:nth-child(1) > button:hover > svg {
+      transition: 0.5s;
+      color: $spacing-color-green;
+    }
+
+    li:nth-child(2) > button:hover > svg {
+      transition: 0.5s;
+      color: $spacing-color-purple;
+    }
+
+    li:nth-child(3) > button:hover > svg {
+      transition: 0.5s;
+      color: $spacing-color-orange;
+    }
+
+    li:nth-child(4) > button:hover > svg {
+      transition: 0.5s;
+      color: $spacing-color-blue;
+    }
+  }
 }
 
-.spacing > ul > li:nth-child(1) > button:hover > svg {
-    transition: 0.5s;
-    color: $spacing-color-green;
-  }
 
-  .spacing > ul > li:nth-child(2) > button:hover > svg {
-    transition: 0.5s;
-    color: $spacing-color-purple;
-  }
-
-  .spacing > ul > li:nth-child(3) > button:hover > svg {
-    transition: 0.5s;
-    color: $spacing-color-orange;
-  }
-
-  .spacing > ul > li:nth-child(4) > button:hover > svg {
-    transition: 0.5s;
-    color: $spacing-color-blue;
-  }
