@@ -10,13 +10,13 @@ function App() {
 
 
     return (
-        /*<div className={"app " + theme}>
+        <div className={"app " + theme}>
             <div className={"layout"}>
                 <Header router={router} setRouter={setRouter} theme={theme} setTheme={setTheme}/>
                 <Content router={router} theme={theme}/>
             </div>
-        </div>*/
-        <Maintenance/>
+        </div>
+        /*<Maintenance/>*/
     )
 }
 
