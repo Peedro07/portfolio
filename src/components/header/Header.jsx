@@ -35,7 +35,7 @@ const Header = (props) => {
         }
     }, [props.theme])
 
-    const updateTheme = (data) =>{
+    const updateTheme = (data) => {
         setActive(false);
         props.setTheme(data)
     }
@@ -93,7 +93,7 @@ const Header = (props) => {
                             <li>
                                 <button onClick={() => props.setRouter('mission')}>
                                     {icons.mission}
-                                    <p>Missions</p>
+                                    <p>Mission</p>
                                 </button>
                             </li>
                             <li>
@@ -103,7 +103,6 @@ const Header = (props) => {
                                 </button>
                             </li>
                         </div>
-
                     </ul>
                 </nav>
             </header>

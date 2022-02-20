@@ -59,8 +59,17 @@
   }
 }
 
-// Theme CLASSIC
+// Theme Spacing Responsive
+@media screen and (max-width: 991px) {
+  .spacing-theme {
+    .profile {
+      box-shadow: 0px 0px 35px 13px #d4d4d4 !important;
+    }
+  }
+}
 
+
+// Theme CLASSIC
 .classic-theme {
   background-color: $classic-bg;
   font-family: 'Poppins', sans-serif;

@@ -21,10 +21,7 @@ const Profile = () => {
                         <li><a href="mailto:pierre.waflart@gmail.com" target="_blank"><FiMail/></a></li>
                     </ul>
                 </div>
-
             </section>
-
-
         </>
     )
 }
