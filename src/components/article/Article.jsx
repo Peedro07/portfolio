@@ -55,12 +55,7 @@ const Article = (props) => {
 export default Article
 
 const About = () => {
-    const birth = () => {
-        let old = new Date('1994 03 10')
-        let diff = Date.now() - old.getTime();
-        let age = new Date(diff);
-        return Math.abs(age.getUTCFullYear() - 1970);
-    }
+
     return (
         <>
             <div className="title">
@@ -76,7 +71,7 @@ const About = () => {
                 </div>
                 <div className="description-about">
                     <div className="card">
-                        <span className="cat">{birth()} ans</span>
+                        <span className="cat">28 ans</span>
                         <span className="cat">France</span>
                         <span className="cat">Angers</span>
                     </div>
