@@ -93,33 +93,18 @@ const Stack = () => {
             <p>Au cours de mes divers années de développement, j'ai pu apréhender plusiers stacks. Vous pouvez les
                 découvrir ci dessous.</p>
             <div className="stack">
-                <div className="back">
-                    <div className="title">
-                        <h2>Back-end</h2>
-                        <div className="separator"></div>
-                    </div>
-                    <div className="images">
-                        <img src={symfony} alt=""/>
-                        <img src={node} alt=""/>
-                        <img src={strapi} alt=""/>
-                        <img src={php} alt=""/>
-                        <img src={wp} alt=""/>
-                    </div>
-                </div>
-
-                <div className="front">
-                    <div className="title">
-                        <h2>Front-end</h2>
-                        <div className="separator"></div>
-                    </div>
-                    <div className="images">
-                        <img src={react} alt=""/>
-                        <img src={vue} alt=""/>
-                        <img src={sass} alt=""/>
-                        <img src={html} alt=""/>
-                        <img className="css" src={css} alt=""/>
-                        <img src={bootstrap} alt=""/>
-                    </div>
+                <div className="mission">
+                    <ul>
+                        <li><GiSpaceSuit/>Symfony</li>
+                        <li><GiSpaceSuit/>Node</li>
+                        <li><GiSpaceSuit/>Strapi</li>
+                        <li><GiSpaceSuit/>PHP, JavaScript</li>
+                        <li><GiSpaceSuit/>ReactJS</li>
+                        <li><GiSpaceSuit/>VueJS</li>
+                        <li><GiSpaceSuit/>Sass</li>
+                        <li><GiSpaceSuit/>HTML - CSS</li>
+                        <li><GiSpaceSuit/>Bootstrap</li>
+                    </ul>
                 </div>
             </div>
         </>
