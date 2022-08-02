@@ -10,11 +10,10 @@ import Social from "../../components/Social";
 import SwitchDark from "../../components/switch/SwitchDark";
 
 const menuItem = [
-  { icon: "fa-home", menuName: "Home" },
-  { icon: "fa-user", menuName: "About" },
-  { icon: "fa-briefcase", menuName: "Portfolio" },
+  { icon: "fa-home", menuName: "Accueil" },
+  { icon: "fa-user", menuName: "Informations" },
   { icon: "fa-envelope-open", menuName: "Contact" },
-  { icon: "fa-comments", menuName: "Blog" },
+  //{ icon: "fa-comments", menuName: "Blog" },
 ];
 
 const HomeDark = () => {
@@ -56,7 +55,7 @@ const HomeDark = () => {
             <div data-aos="fade-up" data-aos-duration="1200">
               <div className="title-section text-left text-sm-center">
                 <h1>
-                  ABOUT <span>ME</span>
+                  A props de <span>Moi</span>
                 </h1>
                 <span className="title-bg">Resume</span>
               </div>
@@ -66,22 +65,6 @@ const HomeDark = () => {
           </TabPanel>
           {/* About Content Ends */}
 
-          {/* Portfolio Content Starts */}
-          <TabPanel className="portfolio professional">
-            <div
-              className="title-section text-left text-sm-center"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <h1>
-                my <span>portfolio</span>
-              </h1>
-              <span className="title-bg">works</span>
-            </div>
-            {/* End title */}
-            <Portfolio />
-          </TabPanel>
-          {/* Portfolio Content Ends */}
 
           {/* Contact Content Starts */}
           <TabPanel className="contact">
@@ -91,7 +74,7 @@ const HomeDark = () => {
               data-aos-duration="1200"
             >
               <h1>
-                get in <span>touch</span>
+                Contactez <span>moi</span>
               </h1>
               <span className="title-bg">contact</span>
             </div>
@@ -104,12 +87,12 @@ const HomeDark = () => {
                 {/*  Left Side Starts */}
                 <div className="col-12 col-lg-4">
                   <h3 className="text-uppercase custom-title mb-0 ft-wt-600 pb-3">
-                    Don't be shy !
+                    Je suis à votre écoute
                   </h3>
                   <p className="open-sans-font mb-4">
-                    Feel free to get in touch with me. I am always open to
-                    discussing new projects, creative ideas or opportunities to
-                    be part of your visions.
+                    N'hésitez pas à prendre contact avec moi. Je suis toujours prêt à
+                    discuter de nouveaux projets, d'idées créatives ou d'opportunités de faire
+                    de faire partie de vos visions.
                   </p>
                   <Address />
                   {/* End Address */}
@@ -131,29 +114,6 @@ const HomeDark = () => {
           {/* Contact Content Ends */}
 
           {/* Blog Content Starts */}
-          <TabPanel className="blog">
-            <div
-              className="title-section text-left text-sm-center "
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <h1>
-                my <span>blog</span>
-              </h1>
-              <span className="title-bg">posts</span>
-            </div>
-            <div
-              className="container"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              {/*  Articles Starts  */}
-              <div className="row pb-50">
-                <Blog />
-              </div>
-              {/* Articles Ends */}
-            </div>
-          </TabPanel>
           {/* Blog Content Ends */}
         </div>
       </Tabs>

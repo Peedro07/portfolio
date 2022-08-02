@@ -2,7 +2,7 @@ import React from "react";
 
 const experienceContent = [
   {
-    year: "2017 - Present",
+    year: "2017 - En cours",
     position: "Développeur Web",
     compnayName: "Freelance",
     details: ` Formateur pour la 3W Académy. Modification et création de site avec PHP.

@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import heroImg from "../../assets/img/hero/dark.jpg";
-import heroImgMobile from "../../assets/img/hero/img-mobile.jpg";
+import Me from "../../assets/img/hero/me.jpg";
+import MeMobile from "../../assets/img/hero/me-mobile.jpg";
 import cancelImg from "../../assets/img/cancel.svg";
 import Index from "../about";
 
 const heroContent = {
-  heroImage: heroImg,
-  heroMobileImage: heroImgMobile,
+  heroImage: Me,
+  heroMobileImage: MeMobile,
   heroTitleName: "pierre waflart",
   heroDesignation: "développeur web full stack",
-  heroDescriptions: `Je suis Pierre Waflart, développeur Web Full Stack depuis 5 ans. J'aime travailler avec Symfony et reactJs`,
+  heroDescriptions: `Je suis développeur PHP/JS. J'ai pu travailler dans diverses entreprises sur des stacks comme Symfony, NodeJS et ReactJS.
+En ayant commencé comme autodidacte, je suis passionné par le développement web. Mes projets gravitent autour de Symfony ainsi que ReactJS.
+N'hésitez pas à me contacter pour toute sorte de projet, je serai ravi d'en discuter autour d'un café.`,
   heroBtn: "En savoir plus sur moi ",
 };
 
@@ -39,7 +42,7 @@ const Hero = () => {
               alt="hero man"
             />
             <h1 className="text-uppercase poppins-font">
-              I'm {heroContent.heroTitleName}.
+              {heroContent.heroTitleName}.
               <span>{heroContent.heroDesignation}</span>
             </h1>
             <p className="open-sans-font">{heroContent.heroDescriptions}</p>
