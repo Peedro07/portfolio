@@ -8,7 +8,6 @@ import { ToastContainer } from "react-toastify";
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('G-XWMVRXF36H');
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App = () => {
   // this for animation
@@ -16,6 +15,7 @@ const App = () => {
     AOS.init({
       duration: 1200,
     });
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
   return (
