@@ -5,6 +5,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import AnimatedCursor from "react-animated-cursor";
 import { ToastContainer } from "react-toastify";
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('G-XWMVRXF36H');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App = () => {
   // this for animation
