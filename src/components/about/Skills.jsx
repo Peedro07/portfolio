@@ -5,6 +5,7 @@ const skillsContent = [
     {skillClass: "p85", skillPercent: "85", skillName: "JAVASCRIPT"},
     {skillClass: "p90", skillPercent: "90", skillName: "REACT"},
     {skillClass: "p90", skillPercent: "90", skillName: "SYMFONY"},
+    {skillClass: "p85", skillPercent: "85", skillName: "DOCKER"},
     {skillClass: "p90", skillPercent: "90", skillName: "HTML"},
     {skillClass: "p85", skillPercent: "85", skillName: "CSS"},
     {skillClass: "p80", skillPercent: "80", skillName: "WORDPRESS"},
