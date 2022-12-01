@@ -12,7 +12,7 @@ const heroContent = {
   heroTitleName: "pierre waflart",
   heroDesignation: "développeur web full stack",
   heroDescriptions: `Je suis développeur PHP/JS. J'ai pu travailler dans diverses entreprises sur des stacks comme Symfony, NodeJS et ReactJS.
-En ayant commencé comme autodidacte, je suis passionné par le développement web. Mes projets gravitent autour de Symfony ainsi que ReactJS.
+En ayant commencé comme autodidacte, je suis passionné par le développement web. Mes projets gravitent autour de Symfony / NodeJS ainsi que ReactJS.
 N'hésitez pas à me contacter pour toute sorte de projet, je serai ravi d'en discuter autour d'un café.`,
   heroBtn: "En savoir plus sur moi ",
 };

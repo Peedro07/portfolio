@@ -91,7 +91,7 @@ const HomeDark = () => {
                   </h3>
                   <p className="open-sans-font mb-4">
                     N'hésitez pas à prendre contact avec moi. Je suis toujours prêt à
-                    discuter de nouveaux projets, d'idées créatives ou d'opportunités de faire
+                    discuter de nouveaux projets, d'idées créatives ou d'opportunités
                     de faire partie de vos visions.
                   </p>
                   <Address />
