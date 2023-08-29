@@ -57,7 +57,7 @@ const HomeDark = () => {
                 <h1>
                   A props de <span>Moi</span>
                 </h1>
-                <span className="title-bg">Resume</span>
+                <span className="title-bg">A propos</span>
               </div>
               {/* End title */}
               <Index />

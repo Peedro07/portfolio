@@ -3,11 +3,11 @@ import React from "react";
 const personalInfoContent = [
   { meta: "Prénom", metaInfo: "Pierre" },
   { meta: "Nom", metaInfo: "Waflart" },
-  { meta: "Age", metaInfo: "28 ans" },
+  { meta: "Age", metaInfo: "29 ans" },
   { meta: "Nationalité", metaInfo: "Français" },
   { meta: "Freelance", metaInfo: "Disponible" },
   { meta: "Adresse", metaInfo: "Angers" },
-  { meta: "Email", metaInfo: "pierre.waflart@gmail.com" },
+  { meta: "Email", metaInfo: "contact@pierre-waflart.fr" },
   { meta: "Langues", metaInfo: "Français, Anglais" },
 ];
 
